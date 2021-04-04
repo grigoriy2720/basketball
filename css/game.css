@@ -7,3 +7,17 @@ body {
   min-width:100%;
   min-height:100%;
 }
+
+.start {
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 20%;
+}
+
+.siteTime {
+  width: 30%;
+  margin-left: 40%;
+  margin-top: 1%;
+  font-weight: bold;
+  font-size: 32px;
+}
