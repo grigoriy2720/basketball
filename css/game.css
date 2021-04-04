@@ -1,0 +1,9 @@
+body {
+  background: url(../img/basketball.jpg), black;
+  background-repeat: no-repeat;
+  background-position: top;
+  top: 0;
+  left: 0;
+  min-width:100%;
+  min-height:100%;
+}
