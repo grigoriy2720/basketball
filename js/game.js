@@ -1,6 +1,6 @@
 function doIt() {
   i = 60;
-  var idInt = setInterval(function() {
+  let idInt = setInterval(function() {
     if (i <= 20) {
       document.getElementById("siteTime").style.color = "red";
     }
@@ -20,10 +20,17 @@ let xMove = x;
 document.addEventListener('keydown', function(event){
   if (['A','a'].includes(event.key)) {
     xMove -= 10;
+    console.log(document.getElementById("platform").offsetRight);
+    if (xMove <= document.getElementById("platform").offsetLeft) {
+      xMove = document.getElementById("platform").offsetLeft;
+    }
     playerJ.style.left = xMove + "px";
   }
   if (['D', 'd'].includes(event.key)) {
     xMove += 10;
+    if (xMove >= document.getElementById("platform").offsetWidth + document.getElementById("platform").offsetLeft - playerJ.offsetWidth) {
+      xMove = document.getElementById("platform").offsetWidth + document.getElementById("platform").offsetLeft - playerJ.offsetWidth;
+    }
     playerJ.style.left = xMove + "px";
   }
 })

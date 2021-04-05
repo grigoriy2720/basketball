@@ -41,6 +41,11 @@ body {
 }
 .playerStyle {
   position: absolute;
-  top: 80%;
+  top: 85%;
   left: 50%;
+}
+.ball {
+  width: 64px;
+  height: 64px;
+  visibility: hidden;
 }
